@@ -4,44 +4,60 @@
 
 body {
     background-color:white;
+    margin: 3.5px;
 }
 
+/********** For Heading **********/
 h1 {
     text-align: center;
     font-size: 4em;
-
 }
 
-
+/********** For Boxing Subtitles **********/
 #box1, #box2, #box3 {
+    box-sizing: border-box;
     background-color: gray;
     border: 2px solid black;
-    margin: 3px;
+    margin: 3.5px;
 }
 
-
+/********** For Subtitles of Boxes **********/
 #headingbox1, #headingbox2, #headingbox3 {
+    width: 200px;
+    text-align: center;
     border-left: 2px solid black;
     border-bottom: 2px solid black;
-    background: pink;
     padding: 5px 15px 5px 15px;
     float: right;
     font-size: 3em;
 }
 
+#headingbox1 {
+    background: pink;
+}
+
+#headingbox2 {
+    background: red;
+    color: white;
+}
+
+#headingbox3 {
+    background:yellow;
+}
+
+/********** For Content of Boxes **********/
 .row p{
     padding: 15px;
     clear: right;
     width: 100%;
     font-size: 1em;
-
 }
 
 /********** For Desktop View only **********/
 @media (min-width: 992px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
       float: left;
-      border: 1px;
+     
     }
     .col-lg-1 {
       width: 8.15%;
@@ -103,7 +119,7 @@ h1 {
       width: 40.75%;
     }
     .col-md-6 {
-      width: 48.9%;
+      width: 49%;
     }
     .col-md-7 {
       width: 57%;
@@ -121,7 +137,7 @@ h1 {
       width: 89.65%;
     }
     .col-md-12 {
-      width: 97.8%;
+      width: 98.9%
     }
   }
 
@@ -165,6 +181,6 @@ h1 {
       width: 91.66%;
     }
     .col-sm-12 {
-      width: 100%;
+      width: 98.9%;
     }
   }
