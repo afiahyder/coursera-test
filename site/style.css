@@ -15,6 +15,9 @@ h1 {
 
 /********** For Boxing Subtitles **********/
 #box1, #box2, #box3 {
+    position: relative;  
+    width: 365px;
+    height: 200px;
     box-sizing: border-box;
     background-color: gray;
     border: 2px solid black;
@@ -24,11 +27,14 @@ h1 {
 /********** For Subtitles of Boxes **********/
 #headingbox1, #headingbox2, #headingbox3 {
     width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
     text-align: center;
     border-left: 2px solid black;
     border-bottom: 2px solid black;
     padding: 5px 15px 5px 15px;
-    float: right;
+    
     font-size: 3em;
 }
 
@@ -46,8 +52,34 @@ h1 {
 }
 
 /********** For Content of Boxes **********/
-.row p{
+.t1{
+  padding: 15px;
+  position: relative;
+  top: 34px;
+  left: 0;
+  clear: right;
+  width: 3px;
+  height: 10px;
+  font-size: 1em;
+  color: aqua;
+  clear: right;
+}
+
+.t2{
+  padding: 15px;
+  position: relative;
+  top: 34px;
+  left: 0;
+  clear: right;
+
+  font-size: 1em;
+}
+
+.t3{
     padding: 15px;
+    position: relative;
+    top: 34px;
+    left: 0;
     clear: right;
     width: 100%;
     font-size: 1em;
